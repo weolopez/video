@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="getting-started">
+
+  <h3>Welcome to your first Ionic app!</h3>
+
+  <p>
+    This starter project is our way of helping you get a functional app running in record time.
+  </p>
+
+  <video #background controls>
+      <source src="background.wav" type="audio/wav">
+      <audio id="audio0" #audio0>
+        <source src="atte_4th.wav" type="audio/wav">
+      </audio>  
+      <audio id="audio1" #audio1>
+        <source src="atte_Anil.wav" type="audio/wav">
+      </audio>  
+  </video>
+
+
+  <p>
+    Aduio0 Duration: {{ audio0Duration }}
+  </p>
+  <p>
+    Aduio1 Duration: {{ audio1Duration }}
+  </p>
+  <p>
+    background Duration: {{ backgroundDuration }}
+  </p>
+  <p>
+    Current Time = {{ time }}
+  </p>
+  <p>
+    <button primary menuToggle>Toggle Menu</button>
+  </p>
+
+</ion-content>
